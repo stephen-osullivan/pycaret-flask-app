@@ -5,8 +5,8 @@ import pandas as pd
 
 app = Flask(__name__)
 
-def load_model():
-    return load('model.joblib') 
+def load_model(f = 'model.joblib'):
+    return load(f) 
 
 @app.route('/')
 def home():
