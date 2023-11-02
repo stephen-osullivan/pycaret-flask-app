@@ -10,7 +10,7 @@ def load_model(f = 'model.joblib'):
 
 @app.route('/')
 def home():
-    return "Breast Cancer Predictions. Use /predict for predictions."
+    return "(NEW) Breast Cancer Predictions. Use /predict for predictions."
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -24,4 +24,4 @@ def predict():
 
 # Start the Flask application
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=8000)
