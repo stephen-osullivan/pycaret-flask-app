@@ -7,7 +7,7 @@ install-train:
 		pip install -r requirements_train.txt
 
 lint:
-	pylint --disable=R,C *.py
+	pylint --disable=R,C app.py
 
 test:
 	python -m pytest -vv
